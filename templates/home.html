@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="home">
+
+    <h2>🎬 Welcome to Mini Video Tube</h2>
+
+    <p>
+        Upload your favourite short videos and watch them anytime.
+    </p>
+
+    <br>
+
+    <a href="{% url 'view_videos' %}">
+        <button>Watch Videos</button>
+    </a>
+
+    <a href="{% url 'add_video' %}">
+        <button>Upload Video</button>
+    </a>
+
+</div>
+
+{% endblock %}

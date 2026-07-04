@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="play-container">
+
+<h2>{{ video.title }}</h2>
+
+<p>{{ video.description }}</p>
+
+<video width="500" controls class="video-player">
+
+    <source src="{{ video.video.url }}" type="video/mp4">
+
+    Your browser does not support video.
+
+</video>
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>All Videos</h2>
+
+<hr><br>
+<div class="video-container">
+
+{% for video in videos %}
+
+<div class="video-card">
+
+    <img src="{{ video.thumbnail.url }}" width="250" height="150">
+
+    <h3>{{ video.title }}</h3>
+
+    <p>{{ video.description }}</p>
+
+    <a href="{% url 'play_video' video.id %}">
+        <button>▶ Play</button>
+    </a>
+    {% if request.user == video.uploaded_by %}
+      <a href="{% url 'update_video' video.id %}"><button>Update</button> </a>
+      <a href="{% url 'delete_video' video.id %}"><button>Delete</button></a>
+
+    {% endif %}
+
+</div>
+
+<br>
+
+{% empty %}
+
+<h3>No Videos Uploaded</h3>
+
+{% endfor %}
+</div>
+
+{% endblock %}

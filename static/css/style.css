@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+.header{
+    background:blue;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:28px;
+}
+
+.container{
+    display:flex;
+    min-height:80vh;
+}
+
+.sidebar{
+    width:220px;
+    background:orangered;
+    padding-top:20px;
+}
+.home{
+    text-align: center;
+    margin-top: 80px;
+}
+.home h2{
+    font-size: 40px;
+    color: #1565c0;
+}
+.home p{
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    padding:18px;
+}
+
+.sidebar a:hover{
+    background:black;
+}
+
+.content{
+    flex:1;
+    background:white;
+    padding:30px;
+}
+
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+form{
+
+    width:400px;
+
+    margin-top:20px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:5px;
+
+    margin-bottom:15px;
+
+}
+
+button{
+
+    padding:10px 20px;
+
+    background:blue;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:green;
+
+}
+
+h2{
+
+    margin-bottom:20px;
+
+}
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: flex-start;
+}
+.video-card{
+
+    border:1px solid gray;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    width:280px;
+
+    background:white;
+
+}
+
+.video-card img{
+
+    width:100%;
+
+    border-radius:8px;
+
+}
+
+.video-card h3{
+
+    margin-top:10px;
+
+}
+
+.video-card p{
+
+    margin-top:10px;
+
+}
+
+.msg{
+    background-color: #d4edda;
+    color: green;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.play-container{
+    text-align: center;
+    padding: 20px;
+}
+
+.video-player{
+    width: 70%;
+    max-width: 650px;
+    height:auto;
+}
